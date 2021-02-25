@@ -1,21 +1,29 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { HashLink as Link } from 'react-router-hash-link';
+import { fadeIn } from '../animation';
 
 const Nav = () => {
     return (
-        <NavDetial>
+        <NavDetial variants={fadeIn} initial="hidden" animate="show">
             <div className="logo">
                 <span></span>
             </div>
             <ul>
                 <li>
-                    <a href=".about-detial"> About me</a>
+                    <Link to="#about-detial">
+                        <p> About me</p>
+                    </Link>
                 </li>
                 <li>
-                    <a href="">Projects</a>
+                    <Link to="#project-detial">
+                        <p>Projects</p>
+                    </Link>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <Link>
+                        <p>Contact</p>
+                    </Link>
                 </li>
             </ul>
         </NavDetial>
@@ -43,9 +51,7 @@ const NavDetial = styled(motion.div)`
         margin-right: 2rem;
     }
 
-    a {
-        text-decoration: none;
-        color: black;
+    p {
         color: ${(props) => props.theme.color};
     }
 `;
