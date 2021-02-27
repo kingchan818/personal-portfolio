@@ -65,7 +65,7 @@ const AboutDetial = styled(motion.div)`
         text-align: center;
     }
     #about-detial {
-        height: 90vh;
+        height: 50vh;
         display: flex;
         align-items: stretch;
         justify-content: center;

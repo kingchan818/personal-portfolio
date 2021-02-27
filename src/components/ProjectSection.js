@@ -15,7 +15,7 @@ const ProjectSection = () => {
     return (
         <ProjectsDetialAll>
             <div id="project-detial">
-                <h1>Projects</h1>
+                <h1>My Projects</h1>
 
                 <ProjectsDetial ref={ref}>
                     <motion.div variants={scrollLeft} initial="hidden" animate={controls} className="project">
@@ -39,10 +39,9 @@ const ProjectSection = () => {
 };
 
 const ProjectsDetialAll = styled(motion.div)`
-    height: 100vh;
-    text-align: center;
+    height: 50vh;
     h1 {
-        margin: 5rem;
+        margin: 7rem;
     }
 `;
 

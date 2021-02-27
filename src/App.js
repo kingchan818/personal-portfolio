@@ -1,6 +1,7 @@
 import Nav from './components/Nav';
 import About from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
+import Contact from './components/Contact';
 import GlobalStyle, { lightTheme, darkTheme, darkBlueTheme, PinkTheme } from './components/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import { useState } from 'react';
@@ -26,6 +27,7 @@ function App() {
                     <Nav />
                     <About setTheme={setTheme} theme={theme} />
                     <ProjectSection />
+                    <Contact />
                 </HashRouter>
             </ThemeProvider>
         </div>

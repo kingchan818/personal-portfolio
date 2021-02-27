@@ -5,12 +5,14 @@ export const lightTheme = {
     color: '#000',
     borderColor: '#000',
     boxShawdo: '0px 5px 30px rgba(0, 0, 0, 0.288)',
+    contactCard: '#000',
 };
 export const darkTheme = {
     background: '#06090F',
     color: '#fff',
     borderColor: '#fff',
     boxShawdo: '0px 5px 30px rgba(255, 255, 255, 0.212)',
+    contactCard: '#fff',
 };
 
 export const darkBlueTheme = {
@@ -18,6 +20,7 @@ export const darkBlueTheme = {
     color: '#fff',
     borderColor: '#fff',
     boxShawdo: '0px 5px 30px rgba(0, 0, 0, 0.836)',
+    contactCard: '#000',
 };
 
 export const PinkTheme = {
@@ -25,6 +28,7 @@ export const PinkTheme = {
     color: '#fff',
     borderColor: '#fff',
     boxShawdo: '0px 5px 30px rgba(0, 0, 0, 0.411)',
+    contactCard: '#000',
 };
 
 const GlobalStyle = createGlobalStyle`
